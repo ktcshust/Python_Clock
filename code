@@ -13,7 +13,7 @@ window.title("Clock")
 window.geometry('500x250')
 stopwatch_counter_num = 66600
 stopwatch_running = False
-timer_counter_num = 66600
+timer_counter_num = 86400
 timer_running = False
 def clock():
 	date_time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S/%p")
@@ -187,3 +187,4 @@ timer_reset = Button(timer_tab, text='Reset', state='disabled', command=lambda:t
 timer_reset.pack(anchor='center')
 clock()
 window.mainloop()
+end
